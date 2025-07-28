@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download 4raBET App</title>
+
+  <!-- 🌈 Styles -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', Impact, sans-serif;
+      background: linear-gradient(135deg, #00f0ff, #ff00b7);
+      color: white;
+      text-align: center;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 20px;
+      margin: 5vh auto;
+      padding: 30px;
+      max-width: 400px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      font-size: 24px;
+      background: yellow;
+      color: black;
+      padding: 20px;
+      border: 3px dashed magenta;
+      border-radius: 50px;
+      display: inline-block;
+      margin: 20px 0;
+      animation: pulse 1.5s infinite;
+      text-decoration: none;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .rewards {
+      font-size: 18px;
+      margin-top: 30px;
+    }
+    .footer {
+      font-size: 12px;
+      margin-top: 40px;
+      opacity: 0.8;
+    }
+  </style>
+
+  <!-- 🔍 Meta & Ad Delegate -->
+  <meta http-equiv="Delegate-CH" content="sec-ch-ua https://ads.trafficjunky.net;sec-ch-ua-platform https://ads.trafficjunky.net;">
+
+  <!-- ✅ GTM -->
+  <script data-hid="gtm-script">
+    if (!window._gtm_init) {
+      window._gtm_init = 1;
+      (function(w,n,d,m,e,p){
+        w[d]=(w[d]==1||n[d]=='yes'||n[d]==1||n[m]==1||(w[e]&&w[e][p]&&w[e][p]()))?1:0
+      })(window,navigator,'doNotTrack','msDoNotTrack','external','msTrackingProtectionEnabled');
+      (function(w,d,s,l,x,y){
+        w[x]={};
+        w._gtm_inject=function(i){
+          if(w.doNotTrack||w[x][i])return;
+          w[x][i]=1;
+          w[l]=w[l]||[];
+          w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+          var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
+          j.async=true;
+          j.src='https://www.googletagmanager.com/gtm.js?id=GTM-NSS6NVM';
+          f.parentNode.insertBefore(j,f);
+        };
+        w[y]('GTM-NSS6NVM')
+      })(window,document,'script','dataLayer','_gtm_ids','_gtm_inject')
+    }
+  </script>
+
+  <!-- 👁️ Clarity -->
+  <script async src="https://www.clarity.ms/tag/xxxxx"></script>
+
+  <!-- 🔍 FingerprintJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js" id="fingerPrint" defer async></script>
+
+  <!-- 💬 Chatwoot -->
+  <script src="https://cdn.chatwoot.com/widget.js" async defer></script>
+  <script>
+    window.chatwootSettings = { position: 'left', launcherTitle: 'Need Help?' };
+    window.onload = function () {
+      window.$chatwoot.run({
+        websiteToken: "YOUR_TOKEN",
+        baseUrl: "https://app.chatwoot.com"
+      });
+    };
+  </script>
+</head>
+<body>
+  <!-- 🧠 GTM noscript -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSS6NVM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <div class="card">
+    <img src="https://4rabet-play.com/new-promo/_nuxt/icons/icon_512x512.795801.png" class="logo" alt="4rabet Logo" />
+    <h1>Download 4raBET Android App</h1>
+    <a class="cta-button" href="https://finder-apps.com/KLRYnGfBhJ/apk/4rabet.apk">DOWNLOAD NOW</a>
+    <div class="rewards">
+      ✅ Instant Bonuses<br/>
+      ✅ 100% Match on First Deposit<br/>
+      ✅ Exclusive Indian Offers
+    </div>
+    <div class="footer">
+      Your UUID: <span id="uuid">loading...</span><br/>
+      <a href="#">Unsubscribe</a>
+    </div>
+  </div>
+
+  <!-- 📦 GET Param Tracker -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const uid = params.get('uid');
+    if (uid) {
+      document.getElementById('uuid').textContent = uid;
+      if (window.Smartico) Smartico.track('visit_landing', { uid });
+    }
+  </script>
+</body>
+</html>

@@ -44,15 +44,6 @@
       50% { transform: scale(1.1); }
       100% { transform: scale(1); }
     }
-    .rewards {
-      font-size: 18px;
-      margin-top: 30px;
-    }
-    .footer {
-      font-size: 12px;
-      margin-top: 40px;
-      opacity: 0.8;
-    }
   </style>
 
   <!-- 🔍 Meta & Ad Delegate -->
@@ -110,23 +101,14 @@
     <img src="https://4rabet-play.com/new-promo/_nuxt/icons/icon_512x512.795801.png" class="logo" alt="4rabet Logo" />
     <h1>Download 4raBET Android App</h1>
     <a class="cta-button" href="https://finder-apps.com/KLRYnGfBhJ/apk/4rabet.apk">DOWNLOAD NOW</a>
-    <div class="rewards">
-      ✅ Instant Bonuses<br/>
-      ✅ 100% Match on First Deposit<br/>
-      ✅ Exclusive Indian Offers
-    </div>
-    <div class="footer">
-      Your UUID: <span id="uuid">loading...</span>
-    </div>
   </div>
 
   <!-- 📦 GET Param Tracker -->
   <script>
     const params = new URLSearchParams(window.location.search);
     const uid = params.get('uid');
-    if (uid) {
-      document.getElementById('uuid').textContent = uid;
-      if (window.Smartico) Smartico.track('visit_landing', { uid });
+    if (uid && window.Smartico) {
+      Smartico.track('visit_landing', { uid });
     }
   </script>
 </body>
